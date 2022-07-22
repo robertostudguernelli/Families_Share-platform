@@ -27,9 +27,9 @@ const ph = require('../helper-functions/plan-helpers')
 const schedule = require('node-schedule')
 
 if (process.env.NODE_APP_INSTANCE === 0) {
-  schedule.scheduleJob(process.env.CRONJOB, () => {
-    ah.checkCompletedTimeslots()
-  })
+//  schedule.scheduleJob(process.env.CRONJOB, () => {
+//    ah.checkCompletedTimeslots()
+//  })
 }
 
 const calendar = google.calendar({
